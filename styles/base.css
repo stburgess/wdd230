@@ -5,10 +5,10 @@
 }
 
 body {
-  font-family: "Sansita", sans-serif;
+  font-family: Roboto, sans-serif;
+  font-weight: 200;
 }
 
-/* mobile **************************/
 header {
   background-color: blue;
   color: white;
@@ -17,27 +17,35 @@ header {
   justify-content: center;
   padding: 20px;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 2rem;
+  font-weight: 500;
+  display: flex;
+  gap: 20px;
 }
 
-header,
 main {
   margin: 0 auto;
+  max-width: 1000px;
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.4rem;
+  padding: 1rem;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.3rem;
   background-color: blue;
   color: white;
+  padding: 1rem;
+  text-align: center;
 }
 
 nav {
-  background-color: #36454f;
+  background-color: black;
   margin: 0 auto;
-  max-width: 800px;
+  width: 100%;
+  font-size: 1.3rem;
 }
 
 nav ul {
@@ -48,19 +56,40 @@ nav a {
   display: block;
   color: #fff;
   text-align: center;
-  padding: 1rem;
   text-decoration: none;
 }
 
-nav a:hover {
-  text-decoration: overline;
+ul {
+  list-style-type: none;
+  padding: 1rem;
 }
 
-.active {
-  color: yellow;
+li {
+  line-height: 200%;
+}
+
+nav a:hover {
+  background-color: white;
+  color: black;
+}
+
+nav .active {
+  border: 1px solid white;
 }
 
 footer {
   background-color: blue;
   color: white;
+  padding: 10px;
+  text-align: center;
+  line-height: 150%;
+}
+
+#lastModified {
+  font-size: small;
+}
+
+.card {
+  border: 1px solid blue;
+  margin-bottom: 10px;
 }
