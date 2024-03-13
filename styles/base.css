@@ -19,44 +19,43 @@ header {
   border: 1px solid rgba(0, 0, 0, 0.1);
   font-size: 2rem;
   font-weight: 500;
-  display: flex;
   gap: 20px;
 }
 
 main {
-  margin: 0 auto;
+  margin: 5px auto;
+  padding: 10px;
   max-width: 1000px;
 }
 
 h1 {
-  font-size: 1.4rem;
-  padding: 1rem;
+  font-size: 1.4em;
+  padding: 5px;
 }
 
 h2 {
-  font-size: 1.3rem;
+  font-size: 1.3em;
   background-color: blue;
   color: white;
   padding: 1rem;
   text-align: center;
 }
 
-nav {
+.navigation {
+  display: flex;
+  flex-direction: column;
   background-color: black;
-  margin: 0 auto;
+  padding: 5px;
+}
+
+.navigation a {
+  display: none;
+  font-size: 1.3em;
   width: 100%;
-  font-size: 1.3rem;
-}
-
-nav ul {
-  list-style-type: none;
-}
-
-nav a {
-  display: block;
   color: #fff;
   text-align: center;
   text-decoration: none;
+  background-color: black;
 }
 
 ul {
@@ -68,13 +67,17 @@ li {
   line-height: 200%;
 }
 
-nav a:hover {
+.navigation a:hover {
   background-color: white;
   color: black;
 }
 
-nav .active {
+.navigation .active {
   border: 1px solid white;
+}
+
+.open a {
+  display: block;
 }
 
 footer {
@@ -90,6 +93,44 @@ footer {
 }
 
 .card {
+  background-color: white;
   border: 1px solid blue;
   margin-bottom: 10px;
+}
+
+#menu {
+  font-size: 1.5rem;
+  border: 0;
+  background: none;
+  color: black;
+  position: absolute;
+  top: 110px;
+  right: 15px;
+}
+
+#menu::before {
+  content: "☰";
+  cursor: pointer;
+}
+
+#menu.open::before {
+  content: "X";
+  cursor: pointer;
+}
+
+#darkBtn {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  width: 25px;
+  height: auto;
+  cursor: pointer;
+}
+
+.dark {
+  background-color: black;
+}
+
+.dark h1 {
+  color: white;
 }
