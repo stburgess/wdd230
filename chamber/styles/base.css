@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-weight: 200;
+}
+
+header {
+  background-color: blue;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 2rem;
+  font-weight: 500;
+  gap: 30px;
+}
+
+main {
+  padding: 10px;
+}
+
+h1 {
+  font-size: 1em;
+  padding: 5px;
+}
+
+h2 {
+  font-size: 1.3em;
+  background-color: blue;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  padding: 5px;
+}
+
+.navigation a {
+  display: none;
+  font-size: 1.3em;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  background-color: black;
+}
+
+ul {
+  list-style-type: none;
+  padding: 1rem;
+}
+
+li {
+  line-height: 200%;
+}
+
+.navigation a:hover {
+  background-color: white;
+  color: black;
+}
+
+.navigation .active {
+  border: 1px solid white;
+}
+
+.open a {
+  display: block;
+}
+
+footer {
+  background-color: blue;
+  color: white;
+  text-align: center;
+  display: grid;
+  grid-template-rows: 0.5fr 1fr auto;
+  white-space: nowrap;
+  padding: 10px;
+  row-gap: 15px;
+}
+
+.contain4 {
+  font-size: small;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid blue;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+#menu {
+  font-size: 1.5rem;
+  border: 0;
+  background: none;
+  color: black;
+  position: absolute;
+  top: 110px;
+  right: 15px;
+}
+
+#menu::before {
+  content: "☰";
+  cursor: pointer;
+}
+
+#menu.open::before {
+  content: "X";
+  cursor: pointer;
+}
+
+.hero-home img {
+  width: 100%;
+  height: auto;
+}
+
+.spotlight {
+  display: block;
+  flex-direction: column;
+}
+
+.spotlight div {
+  margin: 20px;
+}
+
+.weather {
+  height: 200px;
+  width: auto;
+
+}
+
+.weather p {
+  font-size: 1.5em;
+
+}
+
+.call {
+  height: 200px;
+  width: auto;
+}
+
+.call p {
+  font-size: 1.5em;
+}

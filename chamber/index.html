@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vancouver Chamber of Commerce</title>
+  <meta name="description" content="Vancouver Chamber of Commerce website project for WDD 230">
+  <meta name="author" content="Stephen T. Burgess">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@200;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <link rel="icon" href="favicon.ico">
+  <meta property="og:title" content="Vancouver Chamber of Commerce">
+  <meta property="og:type" content="website">
+  <meta property="og:image"
+    content="https://upload.wikimedia.org/wikipedia/commons/1/1e/Gastown_Steam_Clock_by_Kiyokun.JPG">
+  <meta property="og:url" content="https://stburgess.github.io/wdd230/chamber/index.html">
+</head>
+
+<body>
+  <header>
+    <img src="images/logo.png" alt="Chamber logo" width="128" height="128">
+    <h1>Vancouver Chamber of Commerce</h1>
+  </header>
+  <button id="menu"></button>
+  <nav class="navigation">
+    <a href="index.html" class="active">Home</a>
+    <a href="#">Discover</a>
+    <a href="#">Directory</a>
+    <a href="#">Join</a>
+  </nav>
+  <main>
+    <div class="hero-home">
+      <img src="images/gastown-steam-clock.jpg" alt="Vancouver Gas Town">
+    </div>
+
+    <section class="card spotlight">
+      <h2>Business Spotlight</h2>
+      <div>
+      <div>
+        <h3>Business 1</h3>
+      </div>
+      <div>
+        <h3>Business 2</h3>
+      </div>
+      <div>
+        <h3>Business 3</h3>
+      </div>
+</div>
+    </section>
+    <section class=" events card">
+      <h2>Upcoming Events</h2>
+      <ul>
+        <li>1 Jan 2024: Placeholder event</li>
+        <li>1 Jan 2024: Placeholder event</li>
+        <li>1 Jan 2024: Placeholder event</li>
+        <li>1 Jan 2024: Placeholder event</li>
+        <li>1 Jan 2024: Placeholder event</li>
+        <li>1 Jan 2024: Placeholder event</li>
+        <li>1 Jan 2024: Placeholder event</li>
+        <li>1 Jan 2024: Placeholder event</li>
+      </ul>
+    </section>
+    <section class="card weather">
+      <h2>Weather</h2>
+      <p> This is weather info placeholder</p>
+    </section>
+    <section class="card call">
+      <h2>Call to action</h2>
+      <p> This is call to action placeholder</p>
+    </section>
+  </main>
+  <footer>
+    <p class="contact-contain1">Contact information:</p>
+    <p class="contact-contain2">
+      Suite 7, Floor 6<br>
+      125 Cambie Street<br>
+      Vanvouver, British Columbia
+    </p>
+    <p class="contact-contain3">info@vancoverchamber.org<br>
+      +(604) 585-2345<br>
+    </p>
+    <div class="contain4">
+      <p>&copy;<span id="year"></span> | Stephen T. Burgess | Project for WDD 230</p>
+      <p id="lastModified"></p>
+    </div>
+  </footer>
+  <script src="scripts/getDates.js"></script>
+  <script src="scripts/hamMenu.js"></script>
+</body>
+
+</html>
