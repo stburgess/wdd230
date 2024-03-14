@@ -142,7 +142,7 @@ footer {
 
 .weather p {
   font-size: 1.5em;
-
+  padding: 10px;
 }
 
 .call {
@@ -151,5 +151,6 @@ footer {
 }
 
 .call p {
+  padding: 10px;
   font-size: 1.5em;
 }
