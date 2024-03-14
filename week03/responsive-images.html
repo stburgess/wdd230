@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lazy Load Demonatration</title>
+  <meta name="description" content="A demonstration of Lazy Load ">
+  <meta name="author" content="Stephen T. Burgess">
+  <link rel="stylesheet" href="styles/responsive-images.css">
+</head>
+
+<body>
+  <header>
+  </header>
+  <h1>Responsive Images Demonstration</h1>
+  <main>
+   <div class="hero">
+    <picture>
+      <source media="(min-width: 500px)" srcset="images/hero-small.webp">
+      <source media="(min-width: 1000px)" srcset="images/hero-medium.webp">
+      <img src="images/hero-large.webp" alt="temple" width="1500" height="750">
+    </picture>
+   </div>
+  </main>
+  <footer>
+    <p>&copy;<span id="year"></span> Stephen T. Burgess</p>
+    <p id="lastModified"></p>
+  </footer>
+  <script src="scripts/getDates.js"></script>
+</body>
+
+</html>
