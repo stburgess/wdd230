@@ -34,6 +34,13 @@
     <a href="#">Form</a>
   </nav>
   <main>
+    <div class="home-hero">
+      <picture>
+        <source media="(max-width: 600px)" srcset="images/hero-small.webp">
+        <img src="images/hero-large.webp" alt="Buenos Aires Temple" width="960" height="601">
+      </picture>
+      <label>Buenos Aires Temple</label>
+    </div>
     <h1>WDD 230: Web Frontend Development</h1>
     <section class="card">
       <h2>Learning Activities</h2>
@@ -43,8 +50,8 @@
         <li>Week02: <a href="week02/design.html">Design</a> | <a href="https://codepen.io/s65/pen/YzMwwNa">JS Pen</a> |
           <a href="week02/bom.html">BOM</a>
         </li>
-        <li>Week03: <a href="week03/images/landscape.webp">WebP</a> | <a href="week03/lazyload.html">LazyLoad</a> | <a
-            href="week03/responsive-images.html">Responsive Image</a></li>
+        <li>Week03: <a href="week03/images/landscape.webp">WebP</a> | <a href="week03/lazyload.html">Lazy</a> | <a
+            href="week03/responsive-images.html">srcset</a> | <a href="week03/bom.html">localStorage</a></li>
         <li>Week04:</li>
         <li>Week05:</li>
         <li>Week06:</li>
@@ -53,11 +60,17 @@
     <section class="card">
       <h2>Information</h2>
       <ul>
-        <li>Location:</li>
         <li>Weather:</li>
-        <li>Page Visits:</li>
+        <li>
+          <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
+        </li>
       </ul>
     </section>
+    <iframe class="home-map"
+      src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d19726.930955180374!2d23.3188589508456!3d42.69470336624694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbg!4v1710605317023!5m2!1sen!2sbg"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
   </main>
   <footer>
     <p>&copy;<span id="year"></span> - Stephen T. Burgess - Bulgaria</p>
@@ -66,6 +79,7 @@
   <script src="scripts/getDates.js"></script>
   <script src="scripts/hamMenu.js"></script>
   <script src="scripts/darkMode.js"></script>
+  <script src="scripts/numVisits.js"></script>
 </body>
 
 </html>
