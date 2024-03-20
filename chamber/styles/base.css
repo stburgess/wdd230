@@ -15,11 +15,15 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   font-size: 2rem;
   font-weight: 500;
   gap: 30px;
+  height: 150px;
 }
 
 main {
@@ -27,8 +31,8 @@ main {
 }
 
 h1 {
-  font-size: 1em;
-  padding: 5px;
+  font-size: 1.0em;
+  padding: 0px;
 }
 
 h2 {
@@ -98,6 +102,7 @@ footer {
   border: 1px solid blue;
   margin-bottom: 10px;
   margin-top: 10px;
+  width: auto;
 }
 
 #menu {
@@ -153,4 +158,75 @@ footer {
 .call p {
   padding: 10px;
   font-size: 1.5em;
+}
+
+/****************************/
+
+.discover-container1 {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+
+.discover-container1 img {
+  height: auto;
+  width: 100%;
+}
+
+.discover-container2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.discover-container2 picture {
+  border: 1px solid blue;
+  padding: 5px;
+}
+
+.discover-container2 img {
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+.discover-container2 figcaption {
+  border: 1px solid blue;
+  padding: 10px;
+}
+
+.flag img {
+  width: 100%;
+  height: auto;
+}
+
+.about {
+  width: 100%;
+  text-align: justify;
+}
+
+.about p {
+  display: flex;
+  padding: 15px;
+  width: 100%;
+  height: auto;
+}
+
+.visits p {
+  font-size: 1.3em;
+  margin: 20px 20px;
+}
+
+.demographics img {
+  width: 100%;
+  height: auto;
+}
+
+.otherInfo {
+  width: auto;
+  height: 100%;
+  margin-bottom: 0px;
 }
