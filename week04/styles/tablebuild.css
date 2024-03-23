@@ -1,7 +1,6 @@
 :root {
   --back: black;
-  --back2: hsla(150, 50%, 30%, .5);
-  --foredark: hsla(0, 0%, 10%, 1);
+  --back2: hsla(0, 0%, 10%, .8);
   --forelight: hsla(0, 0%, 100%, 1);
   --border: hsla(0, 0%, 20%, .8);
   --borderlight: hsla(0, 0%, 33%, .3);
@@ -25,12 +24,6 @@ caption {
   font-size: .85rem;
 }
 
-tr:first-child th,
-.highlight {
-  background-color: var(--back);
-  color: var(--forelight);
-}
-
 th,
 td {
   padding: 7px 15px;
@@ -38,10 +31,25 @@ td {
 }
 
 th {
+  padding: 18px 15px;
+}
+
+th:nth-child(1) {
   background-color: var(--back);
+  color: var(--forelight);
+  font-size: larger;
+}
+
+th:nth-child(n+2):nth-child(n+2) {
+  background-color: var(--back2);
   font-size: larger;
   color: var(--forelight);
 }
+
+tr {
+  font-weight: bolder;
+}
+
 
 td {
   text-align: center;

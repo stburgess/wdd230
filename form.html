@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stephen T. Burgess - WDD 230 - Web Frontend Development</title>
+  <meta name="description" content="WDD 230 - Web Frontend Development course assignment portal for Stephen T. Burgess">
+  <meta name="author" content="Stephen T. Burgess">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@200;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <link rel="icon" href="favicon.ico">
+  <meta property="og:title" content="Stephen T. Burgess - WDD 230 - Web Frontend Development">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/b/b9/20140618_Sofia_09.jpg">
+  <meta property="og:url" content="https://stburgess.github.io/wdd230/index.html">
+</head>
+
+<body>
+  <header>
+    <img src="images/profile.jpg" alt="Profile photo of Stephen T. Burgess" width="75" height="100">
+    <span>Stephen T. Burgess</span>
+  </header>
+  <img src="images/dark.svg" alt="Dark mode" id="darkBtn">
+  <button id="menu"></button>
+  <nav class="navigation">
+    <a href="index.html">Home</a>
+    <a href="chamber/index.html">Chamber</a>
+    <a href="week01/chamber-site-plan.html">Site Plan</a>
+    <a href="form.html" class="active">Form</a>
+  </nav>
+  <main>
+    <form>
+<form method="get" action="recored.html" class="wf1">
+  <fieldset>
+    <legend>Applicant Information</legend>
+    <label>Username*<input type="text" name="fname" required></label>
+    <label>Password*<input type="text" name="fname" required></label>
+    <label>Password repeat for confirmation*<input type="text" name="fname" required></label>
+<label>Email*<input type="email" name="email" placeholder="someone@gmail.com" required></label>
+    <label>Phone<input type="tel" name="phone" placeholder="1235551234"></label>
+    
+    <label>Website<input type="url" name="url" placeholder="http://">
+  </fieldset>
+  <fieldset>
+    <legend>Course Information</legend>
+    <div>Audience</div>
+    <label><input type="radio" name="audience" value="beginner">Beginner</label>
+    <label><input type="radio" name="audience" value="intermediate">Intermediate</label>
+    <label><input type="radio" name="audience" value="advanced">Advanced</label>
+
+    <div>Software Needed</div>
+    <label><input type="checkbox" name="editing" value="yes">Photo Editing</label>
+    <label><input type="checkbox" name="code" value="yes">Coding</label>
+    <label><input type="checkbox" name="process" value="yes">Preprocessor</label>
+    <label><input type="checkbox" name="client" value="yes">FTP Client</label>
+  </fieldset>
+  <fieldset>
+    <legend>Funding</legend>
+    <label>Anticipated Completion Date<input type="date" name="completedDate"></label>
+    <label>Course Subject
+      <select name=subject>
+        <option>Please Select &#9662:</option>
+        <option value="software">Software</option>
+        <option value="creative">Creative Professional</option>
+        <option value="info">Information Technology</option>
+        <option value="data">Data Professional</option>
+        <option value="construction">Construction</option>
+        <option value="manufacturing">Construction</option>
+      </select></label>
+    <label>How Many Authors<input type="number" name="authors"></label>
+  </fieldset>
+  <input type="submit" value="Propose My Course">
+
+    </form>
+  </main>
+  <footer>
+    <p>&copy;<span id="year"></span> - Stephen T. Burgess - Bulgaria</p>
+    <p id="lastModified"></p>
+  </footer>
+  <script src="scripts/getDates.js"></script>
+  <script src="scripts/hamMenu.js"></script>
+  <script src="scripts/darkMode.js"></script>
+</body>
+
+</html>
