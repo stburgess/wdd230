@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Stephen T. Burgess - WDD 230 - Web Frontend Development</title>
-  <meta name="description" content="WDD 230 - Web Frontend Development course assignment portal for Stephen T. Burgess">
+  <title>Stephen T. Burgess - WDD 230 - Web Frontend Development Example Form</title>
+  <meta name="description" content="WDD 230 - Web Frontend Development example of a form">
   <meta name="author" content="Stephen T. Burgess">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,9 +13,10 @@
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/larger.css">
+  <link rel="stylesheet" href="styles/form.css">
   <link rel="icon" href="favicon.ico">
-  <meta property="og:title" content="Stephen T. Burgess - WDD 230 - Web Frontend Development">
-  <meta property="og:type" content="website">
+  <meta property="og:title" content="Stephen T. Burgess - WDD 230 - Web Frontend Development example form">
+  <meta property="og:type" content="form">
   <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/b/b9/20140618_Sofia_09.jpg">
   <meta property="og:url" content="https://stburgess.github.io/wdd230/index.html">
 </head>
@@ -34,49 +35,42 @@
     <a href="form.html" class="active">Form</a>
   </nav>
   <main>
-    <form>
-<form method="get" action="recored.html" class="wf1">
-  <fieldset>
-    <legend>Applicant Information</legend>
-    <label>Username*<input type="text" name="fname" required></label>
-    <label>Password*<input type="text" name="fname" required></label>
-    <label>Password repeat for confirmation*<input type="text" name="fname" required></label>
-<label>Email*<input type="email" name="email" placeholder="someone@gmail.com" required></label>
-    <label>Phone<input type="tel" name="phone" placeholder="1235551234"></label>
-    
-    <label>Website<input type="url" name="url" placeholder="http://">
-  </fieldset>
-  <fieldset>
-    <legend>Course Information</legend>
-    <div>Audience</div>
-    <label><input type="radio" name="audience" value="beginner">Beginner</label>
-    <label><input type="radio" name="audience" value="intermediate">Intermediate</label>
-    <label><input type="radio" name="audience" value="advanced">Advanced</label>
 
-    <div>Software Needed</div>
-    <label><input type="checkbox" name="editing" value="yes">Photo Editing</label>
-    <label><input type="checkbox" name="code" value="yes">Coding</label>
-    <label><input type="checkbox" name="process" value="yes">Preprocessor</label>
-    <label><input type="checkbox" name="client" value="yes">FTP Client</label>
-  </fieldset>
-  <fieldset>
-    <legend>Funding</legend>
-    <label>Anticipated Completion Date<input type="date" name="completedDate"></label>
-    <label>Course Subject
-      <select name=subject>
-        <option>Please Select &#9662:</option>
-        <option value="software">Software</option>
-        <option value="creative">Creative Professional</option>
-        <option value="info">Information Technology</option>
-        <option value="data">Data Professional</option>
-        <option value="construction">Construction</option>
-        <option value="manufacturing">Construction</option>
-      </select></label>
-    <label>How Many Authors<input type="number" name="authors"></label>
-  </fieldset>
-  <input type="submit" value="Propose My Course">
-
-    </form>
+    <div class="wf1">
+      <h1>New User Registration Form</h1>
+      <form method="get" action="record.html">
+        <fieldset>
+          <legend>User Information</legend>
+          <label>Username*<input type="text" name="username" required id="username"></label>
+          <label>Email*<input type="email" name="email" pattern=".+@byui\.edu$" placeholder="someone@byui.edu" required
+              id="email"></label>
+          <label>Password*<input type="text" name="password1" required id="pw1"></label>
+          <label>Password (repeat for confirmation)*<input type="text" name="password2" required id="pw2"></label>
+          <p id="valMessage"></p>
+          <label>Phone<input type="tel" name="phone" placeholder="1235551234" id="phone"></label>
+          <label>Website<input type="url" name="url" placeholder="http://" id="url"></label>
+        </fieldset>
+        <fieldset>
+          <legend>Page Rating</legend>
+          <label for="r">Rate this page from 1 to 10</label>
+          <p id="rangevalue">5</p>
+          <input autocomplete="off" type="range" id="r" name="r" min="1" max="10" value="5" step="1" list="rangevalues">
+          <datalist id="rangevalues">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </datalist>
+        </fieldset>
+        <input type="submit" value="Sign Me Up!" id="submit">
+      </form>
+    </div>
   </main>
   <footer>
     <p>&copy;<span id="year"></span> - Stephen T. Burgess - Bulgaria</p>
@@ -85,6 +79,8 @@
   <script src="scripts/getDates.js"></script>
   <script src="scripts/hamMenu.js"></script>
   <script src="scripts/darkMode.js"></script>
+  <script src="scripts/formValidation.js"></script>
+  <script src="scripts/rangeSlider.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,107 @@
+:root {
+  --textColor: black;
+  --buttonColor: blue;
+  --legendColor: blue;
+  --validColor: green;
+  --invalidColor: red;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+div {
+  border: 2px solid var(--legendColor);
+  padding: 2rem;
+  max-width: 450px;
+  border-radius: 6px;
+}
+
+.wf1 fieldset {
+  margin: 2rem 0;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0.5rem 2%;
+  max-width: 425px;
+}
+
+.wf1 legend {
+  color: var(--legendColor);
+  padding: 0 0.5rem;
+}
+
+.wf1 label {
+  display: block;
+  padding-top: 1rem;
+  color: var(--textColor);
+  font-size: 0.9rem;
+}
+
+#username,
+#email,
+#pw1,
+#pw2,
+#email,
+#url,
+#phone,
+#rangevalue {
+  background-color: #fafafa;
+  display: block;
+  border: solid 1px #999;
+  border-radius: 6px;
+  padding: 0.75rem;
+  color: var(--textColor);
+  width: 100%;
+  max-width: 400px;
+  appearance: none;
+}
+
+#submit {
+  border: none;
+  background: var(--buttonColor);
+  color: #fff;
+  border-radius: 6px;
+  padding: 1rem;
+  width: 96%;
+  max-width: 400px;
+  margin: -1rem 2% 2rem 2%;
+  box-shadow: 1px 1px 4px #999;
+}
+
+#username:required:valid,
+#email:required:valid,
+#pw1:required:valid {
+  border-right: solid 8px var(--validColor);
+}
+
+#username:required,
+#email:required,
+#pw1:required {
+  border-right: solid 8px var(--invalidColor);
+}
+
+#pw2 {
+  border-right: solid 8px var(--invalidColor);
+}
+
+#r {
+  margin-bottom: 0.5em;
+  width: 100%;
+}
+
+#rangevalue {
+  font-size: 2rem;
+  text-align: center;
+}
+
+#rangevalues {
+  display: flex;
+  margin: 0 0 0 5px;
+  width: 100%;
+  gap: 1.2rem;
+}
+
+#rangevalues option {
+  flex: 1 1 auto;
+}
