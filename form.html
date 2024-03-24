@@ -43,9 +43,10 @@
           <legend>User Information</legend>
           <label>Username*<input type="text" name="username" required id="username"></label>
           <label>Email*<input type="email" name="email" pattern=".+@byui\.edu$" placeholder="someone@byui.edu" required
-              id="email"></label>
-          <label>Password*<input type="text" name="password1" pattern="[a-zA-Z0-9]{8,100}" required id="pw1"></label>
-          <label>Password (repeat for confirmation)*<input type="text" name="password2" required id="pw2"></label>
+              title="Please enter a valid email address" id="email"></label>
+          <label>Password*<input type="password" name="password1" pattern="[a-zA-Z0-9]{8,100}" required
+              id="pw1"></label>
+          <label>Password (repeat for confirmation)*<input type="password" name="password2" required id="pw2"></label>
           <p id="valMessage"></p>
           <label>Phone<input type="tel" name="phone" placeholder="1235551234" id="phone"></label>
           <label>Website<input type="url" name="url" placeholder="http://" id="url"></label>
