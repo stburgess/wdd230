@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vancouver Chamber of Commerce</title>
+  <meta name="description" content="Vancouver Chamber of Commerce website project for WDD 230">
+  <meta name="author" content="Stephen T. Burgess">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@200;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <link rel="icon" href="favicon.ico">
+  <meta property="og:title" content="Vancouver Chamber of Commerce">
+  <meta property="og:type" content="website">
+  <meta property="og:image"
+    content="https://upload.wikimedia.org/wikipedia/commons/1/1e/Gastown_Steam_Clock_by_Kiyokun.JPG">
+  <meta property="og:url" content="https://stburgess.github.io/wdd230/chamber/index.html">
+</head>
+
+<body>
+  <header>
+    <img src="images/logo.png" alt="Chamber logo" width="128" height="128">
+    <h1>Vancouver Chamber of Commerce</h1>
+  </header>
+  <button id="menu"></button>
+  <nav class="navigation">
+    <a href="index.html">Home</a>
+    <a href="discover.html">Discover</a>
+    <a href="#">Directory</a>
+    <a href="join.html" class="active">Join</a>
+  </nav>
+  <main>
+    <section class="card">
+      <h2>Become a Member</h2>
+      <form method="get" action="thankyou.html" class="wcf1">
+        <fieldset>
+          <legend>Applicant Information</legend>
+          <label>Title or Position<input type="text" name="position" pattern="[a-zA-Z\- ]{7,100}" required
+              id="title"></label>
+          <label>First Name*<input type="text" name="fname" required id="fname"></label>
+          <label>Last Name*<input type="text" name="lname" required id="lname"></label>
+          <label>Email*<input type="email" name="email" placeholder="someone@gmail.com" required id="email"></label>
+          <label>Mobile Phone*<input type="tel" name="phone" placeholder="1235551234" required id="phone"></label>
+        </fieldset>
+        <fieldset>
+          <legend>Membership Levels</legend>
+          <label><input type="radio" name="level" value="beginner" id="bronze">Bronze</label>
+          <label><input type="radio" name="level" value="silver" id="silver">Silver</label>
+          <label><input type="radio" name="level" value="gold" id="gold">Gold</label>
+          <label><input type="radio" name="level" value="np" id="np">Non-Profit</label>
+        </fieldset>
+        <fieldset>
+          <legend>Business</legend>
+          <label>Business or Organization*<input type="text" name="busname" required id="busname"></label>
+          <label for="busdesc">Briefly describe your business</label>
+          <textarea name="busdesc" id="busdesc"></textarea>
+          <input type="hidden" name="todayDate" id="todayDate">
+          <input type="submit" value="Join Now" id="submit">
+        </fieldset>
+      </form>
+    </section>
+    <section class="card join">
+      <h2>Membership Benefits</h2>
+      <div class="benefits">
+        <h3>BRONZE</h3>
+        <ul>
+          <li>Cost: $49.99/Year</li>
+          <li>Access to Chamber Database</li>
+          <li>1 hour of free business consultation</li>
+        </ul>
+        <h3>SILVER</h3>
+        <ul>
+          <li>Cost: $124.99/Year</li>
+          <li>Includes all of the bronze-level benefits</li>
+          <li>Plus 5 free meeting room bookings"</li>
+        </ul>
+        <h3>GOLD</h3>
+        <ul>
+          <li>Cost: $299.99/Year</li>
+          <li>Includes all of the silver-level benefits</li>
+          <li>Plus preferred rates on business loans</li>
+        </ul>
+        <h3>NON-PROFIT</h3>
+        <ul>
+          <li>Cost: 50% off any membership level</li>
+          <li>Includes all of the gold-level benefits</li>
+          <li>Plus free adverstising in the monthly newsletter</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p class="contact-contain1">Contact information:</p>
+    <p class="contact-contain2">
+      Suite 7, Floor 6<br>
+      100 Cambie Street<br>
+      Vanvouver, BC
+    </p>
+    <p class="contact-contain3">
+      info@vancoverchamber.org<br>+(604) 585-2345
+    </p>
+    <div class="contain4">
+      <p>&copy;<span id="year"></span> | Stephen T. Burgess | Project for WDD 230</p>
+      <p id="lastModified"></p>
+    </div>
+  </footer>
+  <script src="scripts/getDates.js"></script>
+  <script src="scripts/hamMenu.js"></script>
+</body>
+
+</html>

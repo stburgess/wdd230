@@ -1,3 +1,12 @@
+:root {
+  --textColor: black;
+  --buttonColor: blue;
+  --legendColor: blue;
+  --validColor: green;
+  --invalidColor: red;
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -165,7 +174,7 @@ footer {
 .discover-container1 {
   display: flex;
   flex-direction: column;
-  
+
 }
 
 
@@ -229,4 +238,97 @@ footer {
   width: auto;
   height: 100%;
   margin-bottom: 0px;
+}
+
+/***********Join page************/
+
+.benefits {
+  display: block;
+  width: 100%;
+  padding: 3rem 1rem 4rem 15%;
+}
+
+.benefits li {
+  list-style-type: disc;
+}
+
+.wcf1 {
+  display: block;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 5% 1rem 5%;
+  gap: 0;
+}
+
+.wcf1 fieldset {
+  margin: 2rem 0;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0.5rem 2%;
+  width: 100%;
+}
+
+.wcf1 legend {
+  color: var(--legendColor);
+  padding: 0 0.5rem;
+}
+
+.wcf1 label {
+  display: block;
+  padding-top: 1rem;
+  color: var(--textColor);
+  font-size: 0.9rem;
+}
+
+#fname,
+#lname,
+#email,
+#phone,
+#busname,
+#busdesc,
+#title {
+  background-color: #fafafa;
+  display: block;
+  border: solid 1px #999;
+  border-radius: 6px;
+  padding: 0.75rem;
+  color: var(--textColor);
+  width: 100%;
+  appearance: none;
+}
+
+#bronze,
+#silver,
+#gold,
+#np {
+  margin: 6px;
+}
+
+#submit {
+  border: none;
+  background: var(--buttonColor);
+  color: #fff;
+  border-radius: 6px;
+  padding: 1rem;
+  width: 100%;
+  margin-top: 20px;
+  box-shadow: 1px 1px 4px #999;
+}
+
+#fname:required:valid,
+#lname:required:valid,
+#email:required:valid,
+#phone:required:valid,
+#busname:required:valid,
+#title:required:valid {
+  border-right: solid 8px var(--validColor);
+}
+
+#fname:required,
+#lname:required,
+#email:required,
+#phone:required,
+#busname:required,
+#title:required {
+  border-right: solid 8px var(--invalidColor);
 }
