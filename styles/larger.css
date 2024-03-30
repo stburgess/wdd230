@@ -26,4 +26,8 @@
   .home-hero label {
     font-size: 1.5rem;
   }
+
+    .weather {
+      flex-direction: column;
+    }
 }
