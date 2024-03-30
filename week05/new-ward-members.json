@@ -1,0 +1,23 @@
+{
+  "familyName": "Smith",
+  "dateMovedIn": "2-12-2024",
+  "numOfMembers": 3,
+  "visitedByBishop": "Y",
+  "familyMembers": [
+    {
+      "name": "Joe",
+      "gender": "m",
+      "birth date": "12-09-1980"
+    },
+    {
+      "name": "Emma",
+      "gender": "f",
+      "birth date": "10-07-1982"
+    },
+    {
+      "name": "Alvin",
+      "gender": "f",
+      "birth date": "23-02-2016"
+    }
+  ]
+}

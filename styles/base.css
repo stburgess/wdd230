@@ -163,3 +163,25 @@ footer {
   height: 320px;
   width: 100%;
 }
+
+.information {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  justify-content: space-between;
+}
+
+.information p {
+  margin: 0.25em;
+  display: flex;
+  justify-content: center;
+}
+
+.weather {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+}
