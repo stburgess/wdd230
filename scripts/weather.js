@@ -24,7 +24,7 @@ async function apiFetch() {
 function displayResults(data) {
   weatherIcon.setAttribute('src', `https://openweathermap.org/img/w/${data.weather[0].icon}.png`);
   weatherIcon.setAttribute('alt', `${data.weather[0].description}`);
-  weatherTemp.innerHTML = `${data.main.temp}&deg;F`;
+  weatherTemp.innerHTML = `${data.main.temp}.toFixed(1)&deg;F`;
   weatherDesc.innerHTML = `${data.weather[0].description}`;
 }
 
