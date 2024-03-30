@@ -1,12 +1,10 @@
 const baseURL = "https://stburgess.github.io/wdd230/";
-//const linksURL = "https://stburgess.github.io/wdd230/data/links.json";
-const linksURL = "data/links.json";
+const linksURL = "https://stburgess.github.io/wdd230/data/links.json";
 const activities = document.querySelector('#activities');
 
 async function getLinks() {
   const response = await fetch(linksURL);
   const data = await response.json();
-  //console.log(data);
   displayLinks(data.weeks);
 }
 
