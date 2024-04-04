@@ -4,6 +4,7 @@
   --legendColor: blue;
   --validColor: green;
   --invalidColor: red;
+  --backgroundColor: #fff;
 }
 
 
@@ -37,6 +38,7 @@ header {
 
 main {
   padding: 10px;
+  background-color: var(--backgroundColor);
 }
 
 h1 {
@@ -151,7 +153,6 @@ footer {
 .weather {
   height: 200px;
   width: auto;
-
 }
 
 .weather p {
@@ -174,7 +175,6 @@ footer {
 .discover-container1 {
   display: flex;
   flex-direction: column;
-
 }
 
 
@@ -331,4 +331,82 @@ footer {
 #busname:required,
 #title:required {
   border-right: solid 8px var(--invalidColor);
+}
+
+/***********Directory page************/
+#main-directory {
+  width: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  justify-items: center;
+}
+
+
+.grid section {
+  margin: 20px;
+  border: solid 1px var(--textColor);
+  width: 350px;
+  padding: 1.5rem;
+
+}
+
+.grid section img {
+  margin-bottom: 5px;
+  float: right;
+}
+
+.grid section>* {
+  margin: 0.1rem;
+}
+
+
+h2 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+h2 button {
+  background-color: var(--backgroundColor);
+  padding: 3px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.list section {
+  display: grid;
+  margin: 0;
+  padding: 0.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-items: left;
+}
+
+.list section>* {
+  margin: 0 1rem;
+}
+
+.list section img {
+  display: none;
+}
+
+.list section:nth-child(even) {
+  background-color: rgba(226, 233, 248, 0.548);
+}
+
+section h3 {
+  font-size: 1.5rem;
+}
+
+section a {
+  font-size: 0.85rem;
+  color: navy;
+  letter-spacing: 1.1pt;
+  white-space: nowrap;
 }

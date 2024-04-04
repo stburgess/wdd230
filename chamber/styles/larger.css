@@ -111,3 +111,9 @@
   }
 }
 
+#main-directory {
+
+  grid-template-columns: 1fr;
+  column-gap: 10px;
+}
+

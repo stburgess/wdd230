@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vancouver Chamber of Commerce</title>
-  <meta name="description" content="Vancouver Chamber of Commerce website project for WDD 230">
+  <title>Vancouver Chamber of Commerce - Directory</title>
+  <meta name="description" content="Vancouver Chamber of Commerce directory page">
   <meta name="author" content="Stephen T. Burgess">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,11 +14,11 @@
   <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/larger.css">
   <link rel="icon" href="favicon.ico">
-  <meta property="og:title" content="Vancouver Chamber of Commerce - Home">
+  <meta property="og:title" content="Vancouver Chamber of Commerce - Diectory">
   <meta property="og:type" content="website">
   <meta property="og:image"
     content="https://upload.wikimedia.org/wikipedia/commons/1/1e/Gastown_Steam_Clock_by_Kiyokun.JPG">
-  <meta property="og:url" content="https://stburgess.github.io/wdd230/chamber/index.html">
+  <meta property="og:url" content="https://stburgess.github.io/wdd230/chamber/directory.html">
 </head>
 
 <body>
@@ -28,50 +28,16 @@
   </header>
   <button id="menu"></button>
   <nav class="navigation">
-    <a href="index.html" class="active">Home</a>
+    <a href="index.html">Home</a>
     <a href="discover.html">Discover</a>
-    <a href="directory.html">Directory</a>
+    <a href="directory.html" class="active">Directory</a>
     <a href="join.html">Join</a>
   </nav>
-  <main>
-    <div class="hero-home">
-      <img src="images/gastown-steam-clock.jpg" alt="Vancouver Gas Town">
-    </div>
-
-    <section class="card spotlight">
-      <h2>Business Spotlight</h2>
-      <div>
-        <div>
-          <h3>Business 1</h3>
-        </div>
-        <div>
-          <h3>Business 2</h3>
-        </div>
-        <div>
-          <h3>Business 3</h3>
-        </div>
+  <main id="main-directory">
+    <section class="card">
+      <h2>Membership Directory <button id="grid">⏹️Grid</button> <button id="list">📄List</button></h2>
+      <div class="grid">
       </div>
-    </section>
-    <section class=" events card">
-      <h2>Upcoming Events</h2>
-      <ul>
-        <li>1 Jan 2024: Placeholder event</li>
-        <li>1 Jan 2024: Placeholder event</li>
-        <li>1 Jan 2024: Placeholder event</li>
-        <li>1 Jan 2024: Placeholder event</li>
-        <li>1 Jan 2024: Placeholder event</li>
-        <li>1 Jan 2024: Placeholder event</li>
-        <li>1 Jan 2024: Placeholder event</li>
-        <li>1 Jan 2024: Placeholder event</li>
-      </ul>
-    </section>
-    <section class="card weather">
-      <h2>Weather</h2>
-      <p> Weather Info Placeholder</p>
-    </section>
-    <section class="card call">
-      <h2>Call to action</h2>
-      <p> <a href="#">Call To Action Placeholder</a></p>
     </section>
   </main>
   <footer>
@@ -91,6 +57,7 @@
   </footer>
   <script src="scripts/getDates.js"></script>
   <script src="scripts/hamMenu.js"></script>
+  <script src="scripts/showMembers.js"></script>
 </body>
 
 </html>

@@ -27,7 +27,7 @@
     font-size: 1.5rem;
   }
 
-    .weather {
-      flex-direction: column;
-    }
+  .weather {
+    flex-direction: column;
+  }
 }
