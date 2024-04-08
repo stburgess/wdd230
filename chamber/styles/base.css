@@ -52,6 +52,8 @@ h2 {
   color: white;
   padding: 1rem;
   text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .navigation {
@@ -114,6 +116,7 @@ footer {
   margin-bottom: 10px;
   margin-top: 10px;
   width: auto;
+  border-radius: 13px;
 }
 
 #menu {
@@ -136,39 +139,125 @@ footer {
   cursor: pointer;
 }
 
+.hero-home {
+  position: relative;
+}
+
+.home-banner {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.home-banner button {
+  float: right;
+  cursor: pointer;
+}
+
 .hero-home img {
   width: 100%;
   height: auto;
+  border-radius: 10px;
 }
 
-.spotlight {
-  display: block;
+.spotlight div {
+  display: flex;
   flex-direction: column;
+  align-items: center;
+  row-gap: 40px;
+}
+
+.spotlight p {
+  text-align: center;
 }
 
 .spotlight div {
   margin: 20px;
 }
 
+.spotlight img {
+  width: 130px;
+  height: 130px;
+}
+
+#memberSpots section {
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 10px;
+  width: 180px;
+  height: 225px;
+  align-items: center;
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+.event-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.events li {
+  line-height: 300%;
+}
+
+.events span {
+  font-style: italic;
+}
+
 .weather {
-  height: 200px;
   width: auto;
+  height: 210px;
+}
+
+.weather div {
+  display: flex;
+  justify-content: center;
+  text-transform: capitalize;
 }
 
 .weather p {
-  font-size: 1.5em;
+  font-size: 1.25em;
   padding: 10px;
 }
 
+.forecast {
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+  column-gap: 10%;
+}
+
+.forecast div {
+  display: flex;
+  flex-direction: column;
+}
+
+.forecast p {
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 0px;
+}
+
 .call {
-  height: 200px;
+  height: 210px;
   width: auto;
 }
 
 .call p {
-  padding: 10px;
+  padding-top: 1rem;
   font-size: 1.5em;
+  text-align: center;
 }
+
+.call a {
+  padding: 1rem;
+  font-size: 1em;
+}
+
 
 /****************************/
 
@@ -297,13 +386,6 @@ footer {
   appearance: none;
 }
 
-#bronze,
-#silver,
-#gold,
-#np {
-  margin: 6px;
-}
-
 #submit {
   border: none;
   background: var(--buttonColor);
@@ -333,9 +415,23 @@ footer {
   border-right: solid 8px var(--invalidColor);
 }
 
+#thankyou {
+  grid-template-columns: 1fr;
+  padding: 3rem;
+}
+
+#thankyou h2 {
+  color: var(--textColor);
+  background-color: var(--backgroundColor);
+  line-height: 150%;
+  padding: 3rem;
+  border: solid 1px var(--legendColor);
+}
+
 /***********Directory page************/
 #main-directory {
   width: 100%;
+
 }
 
 .grid {
@@ -344,13 +440,11 @@ footer {
   justify-items: center;
 }
 
-
 .grid section {
   margin: 20px;
   border: solid 1px var(--textColor);
   width: 350px;
   padding: 1.5rem;
-
 }
 
 .grid section img {
@@ -409,4 +503,9 @@ section a {
   color: navy;
   letter-spacing: 1.1pt;
   white-space: nowrap;
+}
+
+#main-directory {
+  grid-template-columns: 1fr;
+  column-gap: 10px;
 }

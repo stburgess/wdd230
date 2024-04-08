@@ -2,7 +2,7 @@
   "members": [
     {
       "name": "Lululemon Athletica",
-      "address1": "1818 Cornwall Ave",
+      "address1": "1818 Cornwall Avenue",
       "address2": "Vancouver, BC V6J 1C7",
       "phone": "(604) 732-6124",
       "url": "https://corporate.lululemon.com",
@@ -29,12 +29,12 @@
     },
     {
       "name": "London Drugs",
-      "address1": "2091 W 42nd Ave",
+      "address1": "2091 W 42nd Avenue",
       "address2": "Vancouver BC V6M 2B4",
       "phone": "(604) 448-4810",
       "url": "https://www.londondrugs.com",
       "image": "images/london-logo.jpg",
-      "level": "Gold"
+      "level": "Silver"
     },
     {
       "name": "Faber Technologies",

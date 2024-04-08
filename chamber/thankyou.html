@@ -4,10 +4,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Form Received Confirmation</title>
-  <meta name="description" content="This page contains a confirmation that the Join form has been received">
+  <title>Vancouver Chamber of Commerce - Thank You</title>
+  <meta name="description" content="Vancouver Chamber of Commerce join form thank you confirmation">
   <meta name="author" content="Stephen T. Burgess">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@200;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <link rel="icon" href="favicon.ico">
+  <meta property="og:title" content="Vancouver Chamber of Commerce - Thank You">
+  <meta property="og:type" content="website">
+  <meta property="og:image"
+    content="https://upload.wikimedia.org/wikipedia/commons/1/1e/Gastown_Steam_Clock_by_Kiyokun.JPG">
+  <meta property="og:url" content="https://stburgess.github.io/wdd230/chamber/thankyou.html">
 </head>
 
 <body>
@@ -15,13 +26,35 @@
     <img src="images/logo.png" alt="Chamber logo" width="128" height="128">
     <h1>Vancouver Chamber of Commerce</h1>
   </header>
-  <main>
-    <h2>Thank you for joining the <br>Vancouver Chamber of Commerce!</h2>
+  <button id="menu"></button>
+  <nav class="navigation">
+    <a href="index.html">Home</a>
+    <a href="discover.html">Discover</a>
+    <a href="directory.html">Directory</a>
+    <a href="join.html">Join</a>
+  </nav>
+  <main id="thankyou">
+    <section>
+      <h2>Thank you for joining the <br>Vancouver Chamber of Commerce!</h2>
+    </section>
   </main>
   <footer>
-    <p>&copy;<span id="year"></span> Vancouver Chamber of Commerce</p>
+    <p class="contact-contain1">Contact information:</p>
+    <p class="contact-contain2">
+      Suite 7, Floor 6<br>
+      100 Cambie Street<br>
+      Vanvouver, BC
+    </p>
+    <p class="contact-contain3">
+      info@vancoverchamber.org<br>+(604) 585-2345
+    </p>
+    <div class="contain4">
+      <p>&copy;<span id="year"></span> | Stephen T. Burgess | Project for WDD 230</p>
+      <p id="lastModified"></p>
+    </div>
   </footer>
   <script src="scripts/getDates.js"></script>
+  <script src="scripts/hamMenu.js"></script>
 </body>
 
 </html>

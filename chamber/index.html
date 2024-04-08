@@ -35,43 +35,68 @@
   </nav>
   <main>
     <div class="hero-home">
-      <img src="images/gastown-steam-clock.jpg" alt="Vancouver Gas Town">
+      <img src="images/gastown-steam-clock.webp" alt="Vancouver Gas Town">
+      <banner class="home-banner"><button>X</button>
+        <p>Meet and Greet</p>
+        <p>Join us on Wednesday at 7 p.m.</p>
+        <p>Conf. Rm #2 at the Chnaber of Commerce</p>
+      </banner>
     </div>
 
     <section class="card spotlight">
-      <h2>Business Spotlight</h2>
-      <div>
+      <h2>Chamber Member Spotlights</h2>
+      <div id="memberSpots">
+      </div>
+    </section>
+    <section class="card events">
+      <h2>Upcoming Events</h2>
+      <div class="event-list">
         <div>
-          <h3>Business 1</h3>
+        <ul>
+          <li><span>1 May - </span> Developing business plan (1)</li>
+          <li><span>8 May - </span> Lunch and learn - Marketing </li>
+          <li><span>17 May - </span> International trade conference </li>
+          <li><span>26 May - </span> Developing business plan (2)</li>
+        </ul>
         </div>
         <div>
-          <h3>Business 2</h3>
-        </div>
-        <div>
-          <h3>Business 3</h3>
+        <ul>
+          <li><span>3 Jun - </span> Networking with a top CEO</li>
+          <li><span>12 Jun - </span> Exibition on business start-ups</li>
+          <li><span>22 Jun - </span> Annual small business exibition</li>
+          <li><span>29 Jun - </span> Lunch and Learn - Governance</li>
+        </ul>
         </div>
       </div>
     </section>
-    <section class=" events card">
-      <h2>Upcoming Events</h2>
-      <ul>
-        <li>1 Jan 2024: Placeholder event</li>
-        <li>1 Jan 2024: Placeholder event</li>
-        <li>1 Jan 2024: Placeholder event</li>
-        <li>1 Jan 2024: Placeholder event</li>
-        <li>1 Jan 2024: Placeholder event</li>
-        <li>1 Jan 2024: Placeholder event</li>
-        <li>1 Jan 2024: Placeholder event</li>
-        <li>1 Jan 2024: Placeholder event</li>
-      </ul>
-    </section>
     <section class="card weather">
-      <h2>Weather</h2>
-      <p> Weather Info Placeholder</p>
+      <h2>Vancouver Weather</h2>
+      <div>
+        <img src="x" alt="" id="weather-icon">
+        <p id="weather-temp"></p>
+        <p id="weather-desc"></p>
+      </div>
+      <div class="forecast">
+        <div>
+          <p id="weather-date1"></p>
+          <p id="weather-temp1"></p>
+        </div>
+        <div>
+          <p id="weather-date2"></p>
+          <p id="weather-temp2"></p>
+        </div>
+        <div>
+          <p id="weather-date3"></p>
+          <p id="weather-temp3"></p>
+        </div>
+      </div>
     </section>
     <section class="card call">
-      <h2>Call to action</h2>
-      <p> <a href="#">Call To Action Placeholder</a></p>
+      <div>
+        <h2>* Kick It into High Gear *</h2>
+        <p>Want to take your business<br>to the next level???</p>
+        <p><a href="join.html">MAKE IT HAPPEN!</a></p>
+      </div>
     </section>
   </main>
   <footer>
@@ -91,6 +116,8 @@
   </footer>
   <script src="scripts/getDates.js"></script>
   <script src="scripts/hamMenu.js"></script>
+  <script src="scripts/weather.js"></script>
+  <script src="scripts/randomSpots.js"></script>
 </body>
 
 </html>

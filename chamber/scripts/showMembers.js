@@ -18,7 +18,6 @@ async function getMemberData() {
 
 const displayMembers = (members) => {
   members.forEach((member) => {
-
     let card = document.createElement('section');
     let name = document.createElement('p');
     let address1 = document.createElement('p');
