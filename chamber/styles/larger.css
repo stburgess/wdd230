@@ -114,6 +114,7 @@
   }
 
   .hover-effect:hover {
-    border-radius: 100px 100px;
+    border-top-left-radius: 175px;
+    border-top-right-radius: 175px;
   }
 }

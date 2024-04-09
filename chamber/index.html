@@ -23,7 +23,7 @@
 
 <body>
   <header>
-    <img src="images/logo.png" alt="Chamber logo" width="128" height="128">
+    <img src="images/logo.webp" alt="Chamber logo" width="128" height="128">
     <h1>Vancouver Chamber of Commerce</h1>
   </header>
   <button id="menu"></button>
@@ -33,14 +33,16 @@
     <a href="directory.html">Directory</a>
     <a href="join.html">Join</a>
   </nav>
+  
   <main>
     <div class="hero-home">
       <img src="images/gastown-steam-clock.webp" alt="Vancouver Gas Town">
-      <banner class="home-banner"><button>X</button>
-        <p>Meet and Greet</p>
-        <p>Join us on Wednesday at 7 p.m.</p>
-        <p>Conf. Rm #2 at the Chnaber of Commerce</p>
-      </banner>
+      <div class="home-banner">
+        <button id="home-banner-bt">X</button>
+        <h3>*** Meet and Greet ***</h3>
+        <p>Come join us this Wednesday at 7 p.m.</p>
+        <p>Venue is the Chamber of Commerce - conference room #2</p>
+      </div>
     </div>
 
     <section class="card spotlight">
@@ -52,20 +54,20 @@
       <h2>Upcoming Events</h2>
       <div class="event-list">
         <div>
-        <ul>
-          <li><span>1 May - </span> Developing business plan (1)</li>
-          <li><span>8 May - </span> Lunch and learn - Marketing </li>
-          <li><span>17 May - </span> International trade conference </li>
-          <li><span>26 May - </span> Developing business plan (2)</li>
-        </ul>
+          <ul>
+            <li><span>1 May - </span> Developing business plan (1)</li>
+            <li><span>8 May - </span> Lunch and learn - Marketing </li>
+            <li><span>17 May - </span> International trade conference </li>
+            <li><span>26 May - </span> Developing business plan (2)</li>
+          </ul>
         </div>
         <div>
-        <ul>
-          <li><span>3 Jun - </span> Networking with a top CEO</li>
-          <li><span>12 Jun - </span> Exibition on business start-ups</li>
-          <li><span>22 Jun - </span> Annual small business exibition</li>
-          <li><span>29 Jun - </span> Lunch and Learn - Governance</li>
-        </ul>
+          <ul>
+            <li><span>3 Jun - </span> Networking with a top CEO</li>
+            <li><span>12 Jun - </span> Exibition on business start-ups</li>
+            <li><span>22 Jun - </span> Annual small business exibition</li>
+            <li><span>29 Jun - </span> Lunch and Learn - Governance</li>
+          </ul>
         </div>
       </div>
     </section>
@@ -118,6 +120,7 @@
   <script src="scripts/hamMenu.js"></script>
   <script src="scripts/weather.js"></script>
   <script src="scripts/randomSpots.js"></script>
+  <script src="scripts/homeBanner.js"></script>
 </body>
 
 </html>

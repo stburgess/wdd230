@@ -1,5 +1,4 @@
 const memberSpots = document.querySelector("#memberSpots");
-//const url = 'https://stburgess.github.io/wdd230/chamber/data/members.json';
 const url = 'data/members.json';
 
 async function getMemberData() {
@@ -19,17 +18,17 @@ async function getMemberData() {
 const displaySpots = (members) => {
   let spotMemsI = [];
   while (spotMemsI.length < 3) {
-    let randMemI = Math.floor(Math.random()*members.length );
+    let randMemI = Math.floor(Math.random() * members.length);
     console.log(randMemI);
     if (!spotMemsI.includes(randMemI)) {
       let memLevel = members[randMemI].level;
-      if (memLevel === "Gold" || memLevel === "Silver")  {
+      if (memLevel === "Gold" || memLevel === "Silver") {
         spotMemsI.push(randMemI);
       }
     }
-    
+
   }
-  
+
   spotMemsI.forEach((spotMemI) => {
     let card = document.createElement('section');
     let name = document.createElement('p');
@@ -60,11 +59,6 @@ const displaySpots = (members) => {
     card.appendChild(level);
     card.appendChild(image);
     card.appendChild(name);
- //   card.appendChild(address1);
-  //  card.appendChild(address2);
- //   card.appendChild(phone);
- //   card.appendChild(url);
-    
 
     memberSpots.appendChild(card);
   });

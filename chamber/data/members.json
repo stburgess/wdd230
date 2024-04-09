@@ -6,7 +6,7 @@
       "address2": "Vancouver, BC V6J 1C7",
       "phone": "(604) 732-6124",
       "url": "https://corporate.lululemon.com",
-      "image": "images/lululemon-logo.jpg",
+      "image": "images/lululemon-logo.webp",
       "level": "Silver"
     },
     {
@@ -15,7 +15,7 @@
       "address2": "Vancouver, BC V6B 1M8",
       "phone": "(844) 244-6363",
       "url": "https://www.chime.com",
-      "image": "images/chime-logo.png",
+      "image": "images/chime-logo.webp",
       "level": "Bronze"
     },
     {
@@ -24,7 +24,7 @@
       "address2": "Vancouver, BC V6E 4T3",
       "phone": "(888) 604-575",
       "url": "https://www.tegus.com",
-      "image": "images/tegus-logo.jpg",
+      "image": "images/tegus-logo.webp",
       "level": "Gold"
     },
     {
@@ -33,7 +33,7 @@
       "address2": "Vancouver BC V6M 2B4",
       "phone": "(604) 448-4810",
       "url": "https://www.londondrugs.com",
-      "image": "images/london-logo.jpg",
+      "image": "images/london-logo.webp",
       "level": "Silver"
     },
     {
@@ -42,7 +42,7 @@
       "address2": "Vancouver, BC V6B 2Y5",
       "phone": "(888) 366-WORK",
       "url": "https://faberconnect.com/",
-      "image": "images/faber-logo.jpg",
+      "image": "images/faber-logo.webp",
       "level": "Gold"
     },
     {
@@ -51,7 +51,7 @@
       "address2": "Vancouver, BC V6B 1H4",
       "phone": "(866) 397-8669",
       "url": "https://stonz.com/",
-      "image": "images/stonz-logo.jpg",
+      "image": "images/stonz-logo.webp",
       "level": "Gold"
     },
     {
@@ -60,7 +60,7 @@
       "address2": "Vancouver, BC V6A 1B5",
       "phone": " (604) 681-4437",
       "url": "https://atira.bc.ca/",
-      "image": "images/atira-logo.jpg",
+      "image": "images/atira-logo.webp",
       "level": "Non-Profit"
     }
   ]

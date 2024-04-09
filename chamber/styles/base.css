@@ -120,12 +120,12 @@ footer {
 }
 
 #menu {
-  font-size: 1.5rem;
+  font-size: 2rem;
   border: 0;
   background: none;
   color: black;
   position: absolute;
-  top: 110px;
+  top: 105px;
   right: 15px;
 }
 
@@ -141,26 +141,53 @@ footer {
 
 .hero-home {
   position: relative;
+  justify-items: center;
 }
 
 .home-banner {
   position: absolute;
-  top: 10%;
-  left: 10%;
+  top: 0;
+  left: 0;
   background-color: white;
-  border-radius: 5px;
+  border-top-left-radius: 13px;
+  border-top-right-radius: 13px;
+  border: 1px solid var(--buttonColor);
   padding: 10px;
+  width: 100%;
+  line-height: 200%;
+  text-align: center;
+  min-width: 275px;
+}
+
+.home-banner p {
+  text-wrap: balance;
+}
+
+.home-banner h3 {
+  padding-top: 10px;
+  font-size: 1.4rem;
 }
 
 .home-banner button {
-  float: right;
   cursor: pointer;
+  width: 40px;
+  height: 40px;
+  float: right;
+  top: 10px;
+  right: 10px;
+  border-radius: 13px;
+  font-size: 2rem;
+  background-color:white;
+}
+
+.hide {
+  display: none;
 }
 
 .hero-home img {
   width: 100%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 13px;
 }
 
 .spotlight div {
@@ -264,12 +291,20 @@ footer {
 .discover-container1 {
   display: flex;
   flex-direction: column;
+  margin-top: -10px;
 }
-
 
 .discover-container1 img {
   height: auto;
   width: 100%;
+  padding: 20px;
+}
+
+.infoTable {
+  padding: 10px;
+  line-height: 200%;
+  margin: 10px 0 10px 10px;
+  width: 95%;
 }
 
 .discover-container2 {
@@ -289,15 +324,19 @@ footer {
   width: 100%;
   height: auto;
   vertical-align: top;
+  border-top-left-radius: 13px;
+  border-top-right-radius: 13px;
 }
 
 .discover-container2 figcaption {
   border: 1px solid blue;
+  border-bottom-left-radius: 13px;
+  border-bottom-right-radius: 13px;
   padding: 10px;
 }
 
-.flag img {
-  width: 100%;
+.coat img {
+  width: 50%;
   height: auto;
 }
 
@@ -424,14 +463,14 @@ footer {
   color: var(--textColor);
   background-color: var(--backgroundColor);
   line-height: 150%;
-  padding: 3rem;
+  padding: 2rem;
   border: solid 1px var(--legendColor);
+  border-radius: 13px;
 }
 
 /***********Directory page************/
 #main-directory {
   width: 100%;
-
 }
 
 .grid {
@@ -456,7 +495,6 @@ footer {
   margin: 0.1rem;
 }
 
-
 h2 {
   padding-left: 0;
   padding-right: 0;
@@ -476,7 +514,7 @@ h2 button {
 
 .list section {
   display: grid;
-  margin: 0;
+  margin: 1rem 0 0.5rem 0;
   padding: 0.25rem;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   justify-items: left;

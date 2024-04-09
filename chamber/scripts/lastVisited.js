@@ -30,5 +30,3 @@ if (lastVisit !== 0) {
 
 // 4️⃣ store the new visit total into localStorage, key=numVisits-ls
 localStorage.setItem("lastVisit-ls", theDateToday);
-
-// 💡A client can view the localStorage data using the Applications panel in the browsers's DevTools - check it out on any major site.
